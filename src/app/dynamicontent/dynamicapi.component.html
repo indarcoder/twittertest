@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Dynamic Content through Api</h3>
+
+    <div *ngIf="loading">Please wait..</div>
+    <div *ngIf="!loading">
+
+    <ng-container *ngFor="let item of PhotoList">
+        <div class="media border mb-3" >
+            <img class="mr-3 img-thumbnail" src="{{item.thumbnailUrl}}" alt="{{item.title}}" style="width: 200px;" >
+            <div class="media-body">
+              <h5 class="mt-0">{{item.title}}</h5>
+              <p></p></div>
+          </div>
+    </ng-container>
+</div>
+</div>
+
+

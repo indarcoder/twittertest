@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>Static Content</h3>
+
+    <ng-container *ngFor="let item of Merchants">
+       
+          <div class="media border mb-3" >
+              <img class="mr-3 img-thumbnail" src="{{item.Thumbnail}}" alt="{{item.CompanyName}}" style="width: 200px;" >
+              <div class="media-body">
+                <h5 class="mt-0">{{item.CompanyName}}</h5>
+                <p></p>  </div>
+            </div>
+      
+    </ng-container>
+</div>
